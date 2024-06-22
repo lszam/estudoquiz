@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Pusab";
+  src: url("font/PUSAB___.otf") format("truetype");
+  /* Substitua 'caminho/para/o/arquivo' com o caminho real onde você colocou o arquivo TTF */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Remove o sublinhado e define a cor do link */
+a {
+  text-decoration: none;
+  color: #ffffff; /* Substitua pelo valor de cor desejado */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Pusab", sans-serif;
+}
+
+.container-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.titulo-principal {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  max-width: 1000px;
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-color: black;
+  font-family: "Pusab", sans-serif;
+  font-size: 40px;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: solid 0px;
+  border-color: black;
+  border-radius: 16px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 1) inset 0 2px 18px rgba(0, 0, 0, 1);
+  background-color: rgb(102, 54, 54);
+  margin: 20px;
+  font-size: 20px;
+  color: aliceblue;
+  padding: 20px;
+  width: 300px;
+}
+.botao:hover {
+  box-shadow: inset 0 2px 18px rgba(0, 0, 0, 1);
+  background-color: rgb(141, 86, 86);
+}
+
+.container-pergunta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container-botoes {
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.coluna1 {
+  flex-direction: column;
+  margin-left: 10px;
+  max-width: auto;
+}
+.coluna2 {
+  flex-direction: column;
+}
+
+.errou {
+  font-size: 40px;
+  text-align: center;
+}
+
+.audio-container {
+  position: relative;
+  width: 560px; /* Define a largura do iframe */
+  height: 0; /* Define a altura como 0 para esconder o vídeo */
+  overflow: hidden; /* Esconde o conteúdo que transborda */
+}
+
+.audio-container iframe {
+  position: absolute;
+  top: -9999px; /* Move o iframe para fora da tela */
+  left: -9999px; /* Move o iframe para fora da tela */
+}
