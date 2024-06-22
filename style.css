@@ -1,23 +1,14 @@
-@font-face {
-  font-family: "Pusab";
-  src: url("font/PUSAB___.otf") format("truetype");
-  /* Substitua 'caminho/para/o/arquivo' com o caminho real onde você colocou o arquivo TTF */
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Remove o sublinhado e define a cor do link */
-a {
-  text-decoration: none;
-  color: #ffffff; /* Substitua pelo valor de cor desejado */
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-family: "Pusab", sans-serif;
+  font-family: "Jersey 10", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .container-body {
@@ -34,11 +25,12 @@ h1 {
   align-content: center;
   text-align: center;
   max-width: 1000px;
+  padding: 30px;
   background-color: rgb(255, 255, 255);
   border: solid;
   border-color: black;
   font-family: "Pusab", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .botao {
@@ -92,13 +84,13 @@ h1 {
 
 .audio-container {
   position: relative;
-  width: 560px; /* Define a largura do iframe */
-  height: 0; /* Define a altura como 0 para esconder o vídeo */
-  overflow: hidden; /* Esconde o conteúdo que transborda */
+  width: 560px;
+  height: 0;
+  overflow: hidden;
 }
 
 .audio-container iframe {
   position: absolute;
-  top: -9999px; /* Move o iframe para fora da tela */
-  left: -9999px; /* Move o iframe para fora da tela */
+  top: -9999px;
+  left: -9999px;
 }
